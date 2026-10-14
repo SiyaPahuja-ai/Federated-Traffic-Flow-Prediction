@@ -1,0 +1,57 @@
+# Logs & Diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+coverage/
+.coverage
+htmlcov/
+
+# Dependencies and Build Output
+node_modules/
+dist/
+dist-ssr/
+.vite/
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# OS and Editor Files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# Scratch & Temporary Audit Files
+scratch/
+scratch_*
+*.tmp
+*.bak
+
+# Data & Large Benchmark Artifacts (Raw & ML-Ready Binaries)
+data/raw/metr-la/metr-la.h5
+data/raw/metr-la/*.h5
+data/raw/metr-la/*.npz
+data/processed/metr-la/ml_ready/*.npz
+data/raw/pems08/*.zip

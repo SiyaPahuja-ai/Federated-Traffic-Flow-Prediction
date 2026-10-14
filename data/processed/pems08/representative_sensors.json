@@ -1,0 +1,110 @@
+[
+  {
+    "id": "PEMS08_009",
+    "numericId": 9,
+    "name": "PEMS08_009 (I-10 Corridor)",
+    "corridor": "I-10 Corridor",
+    "meanFlow": 461.3,
+    "degree": 3,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_028",
+    "numericId": 28,
+    "name": "PEMS08_028 (I-15 Corridor)",
+    "corridor": "I-15 Corridor",
+    "meanFlow": 252.2,
+    "degree": 2,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_062",
+    "numericId": 62,
+    "name": "PEMS08_062 (SR-60 Corridor)",
+    "corridor": "SR-60 Corridor",
+    "meanFlow": 91.8,
+    "degree": 4,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_111",
+    "numericId": 111,
+    "name": "PEMS08_111 (I-215 Interchange)",
+    "corridor": "I-215 Interchange",
+    "meanFlow": 251.3,
+    "degree": 2,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_133",
+    "numericId": 133,
+    "name": "PEMS08_133 (I-10 Corridor)",
+    "corridor": "I-10 Corridor",
+    "meanFlow": 237.7,
+    "degree": 3,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_138",
+    "numericId": 138,
+    "name": "PEMS08_138 (I-15 Corridor)",
+    "corridor": "I-15 Corridor",
+    "meanFlow": 238.4,
+    "degree": 1,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_153",
+    "numericId": 153,
+    "name": "PEMS08_153 (SR-60 Corridor)",
+    "corridor": "SR-60 Corridor",
+    "meanFlow": 335.8,
+    "degree": 7,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_163",
+    "numericId": 163,
+    "name": "PEMS08_163 (I-215 Interchange)",
+    "corridor": "I-215 Interchange",
+    "meanFlow": 211.4,
+    "degree": 3,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_164",
+    "numericId": 164,
+    "name": "PEMS08_164 (I-10 Corridor)",
+    "corridor": "I-10 Corridor",
+    "meanFlow": 265.6,
+    "degree": 2,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_167",
+    "numericId": 167,
+    "name": "PEMS08_167 (I-15 Corridor)",
+    "corridor": "I-15 Corridor",
+    "meanFlow": 200.7,
+    "degree": 6,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_039",
+    "numericId": 39,
+    "name": "PEMS08_039 (SR-60 Corridor)",
+    "corridor": "SR-60 Corridor",
+    "meanFlow": 277.4,
+    "degree": 5,
+    "unit": "veh/5min"
+  },
+  {
+    "id": "PEMS08_058",
+    "numericId": 58,
+    "name": "PEMS08_058 (I-215 Interchange)",
+    "corridor": "I-215 Interchange",
+    "meanFlow": 195.3,
+    "degree": 2,
+    "unit": "veh/5min"
+  }
+]

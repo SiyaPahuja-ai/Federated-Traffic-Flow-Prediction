@@ -1,0 +1,171 @@
+{
+  "status": "COMPLETED",
+  "provenance": {
+    "executionTimestamp": "2026-10-13T08:32:22.659889+00:00",
+    "library": "Opacus 1.6.0 (PyTorch Verified Differential Privacy)",
+    "accountantType": "R\u00e9nyi Differential Privacy (RDPAccountant)",
+    "compositionTheorem": "Parallel Composition over Disjoint Regional Partitions",
+    "device": "cpu",
+    "seed": 42,
+    "durationSeconds": 784.9
+  },
+  "privacySpecification": {
+    "formalClaim": "(\u03b5, \u03b4)-DP under the evaluated training configuration",
+    "safeHeading": "Formal Differential Privacy Experiment",
+    "isPrivacyGuaranteed": false,
+    "epsilon": 5.311,
+    "delta": 1e-05,
+    "maxGradNorm": 1.0,
+    "noiseMultiplier": 0.5,
+    "clientEpsilons": {
+      "REGION_A": 5.311,
+      "REGION_B": 5.311,
+      "REGION_C": 5.311,
+      "REGION_D": 5.311
+    },
+    "perRoundSteps": 20
+  },
+  "dpFedAvg": {
+    "framework": "DP-FedAvg (Client-Side Gradient Perturbation)",
+    "seed": 42,
+    "rounds": 13,
+    "bestRound": 13,
+    "bestValidationMAE": 3.4007,
+    "testMAE": 3.7964,
+    "testRMSE": 7.3456,
+    "testMAPE": 10.94,
+    "validationTrajectory": [
+      9.3064,
+      8.0003,
+      6.8533,
+      5.9366,
+      5.0876,
+      4.3786,
+      4.0454,
+      3.842,
+      3.6886,
+      3.5632,
+      3.4969,
+      3.4469,
+      3.4164,
+      3.4007
+    ],
+    "bytesPerRound": 882168,
+    "totalBytes": 11468184,
+    "epsilon": 5.311,
+    "delta": 1e-05,
+    "privacyStatus": "Formal (5.31, 1e-05)-DP Evaluated",
+    "privacyClaim": "(5.31, 1e-05)-DP under the evaluated training configuration"
+  },
+  "standardBaseline": {
+    "framework": "Standard FedAvg (Non-IID Geographic)",
+    "seed": 42,
+    "rounds": 13,
+    "bestRound": 8,
+    "bestValidationMAE": 3.1536,
+    "testMAE": 3.5322,
+    "testRMSE": 7.0956,
+    "testMAPE": 9.99,
+    "bytesPerRound": 882168,
+    "totalBytes": 11468184,
+    "epsilon": null,
+    "delta": null,
+    "privacyStatus": "No Formal Privacy Guarantee (Plaintext State Sharing)",
+    "privacyClaim": "Raw sensor data remains local; model parameters shared without formal DP guarantee."
+  },
+  "tradeoffAnalysis": {
+    "maeDelta": 0.2642,
+    "maeDeltaPercent": 7.48,
+    "privacyGain": "Formal mathematical (5.31, 1e-05)-DP bounding information leakage",
+    "accuracyCost": "+0.2642 mph (+7.48%) test error due to DP noise injection"
+  },
+  "secureAggregation": {
+    "label": "Secure Aggregation Simulation",
+    "evaluated": true,
+    "protocol": "Pairwise Additive Masking (Bonawitz et al. 2017)",
+    "allRoundsExactZeroSum": true,
+    "overheadBytesPerRound": 960,
+    "totalOverheadBytes": 12480,
+    "disclaimer": "SIMULATION ONLY: Demonstrates pairwise additive mask cancellation; not a production threshold cryptography or HSM deployment.",
+    "roundsHistory": [
+      {
+        "round": 1,
+        "zeroSumCancellation": true,
+        "maxResidualError": 9.685754776000977e-08,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 2,
+        "zeroSumCancellation": true,
+        "maxResidualError": 8.568167686462402e-08,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 3,
+        "zeroSumCancellation": true,
+        "maxResidualError": 1.1920928955078125e-07,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 4,
+        "zeroSumCancellation": true,
+        "maxResidualError": 1.1920928955078125e-07,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 5,
+        "zeroSumCancellation": true,
+        "maxResidualError": 1.1920928955078125e-07,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 6,
+        "zeroSumCancellation": true,
+        "maxResidualError": 9.685754776000977e-08,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 7,
+        "zeroSumCancellation": true,
+        "maxResidualError": 9.685754776000977e-08,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 8,
+        "zeroSumCancellation": true,
+        "maxResidualError": 1.1920928955078125e-07,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 9,
+        "zeroSumCancellation": true,
+        "maxResidualError": 1.1920928955078125e-07,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 10,
+        "zeroSumCancellation": true,
+        "maxResidualError": 1.043081283569336e-07,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 11,
+        "zeroSumCancellation": true,
+        "maxResidualError": 1.043081283569336e-07,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 12,
+        "zeroSumCancellation": true,
+        "maxResidualError": 8.940696716308594e-08,
+        "protocolOverheadBytes": 384
+      },
+      {
+        "round": 13,
+        "zeroSumCancellation": true,
+        "maxResidualError": 1.0896474123001099e-07,
+        "protocolOverheadBytes": 384
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dataset": "PeMS08",
+  "targetVariable": "flow",
+  "unit": "veh/5min",
+  "mean": 230.2189,
+  "std": 145.8735,
+  "min": 0.0,
+  "max": 1147.0,
+  "fitSplit": "TRAIN_ONLY",
+  "trainTimesteps": 12499
+}

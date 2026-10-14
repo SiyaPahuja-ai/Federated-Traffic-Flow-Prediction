@@ -1,0 +1,57 @@
+{
+  "status": "EVALUATED",
+  "dataset": "PeMS08",
+  "modelName": "SpatialGraphLSTM (Flow Experimental)",
+  "domain": "Freeway Traffic Flow Volume",
+  "targetVariable": "flow",
+  "unit": "veh/5min",
+  "evaluationTimestamp": "2026-10-13T09:40:23.979178+00:00",
+  "overall": {
+    "testMae": 19.45,
+    "testRmse": 30.15,
+    "testMape": 11.11,
+    "unit": "veh/5min"
+  },
+  "horizons": {
+    "+5 min": {
+      "horizonMinutes": 5,
+      "mae": 14.96,
+      "rmse": 22.32,
+      "mape": 8.85,
+      "unit": "veh/5min"
+    },
+    "+15 min": {
+      "horizonMinutes": 15,
+      "mae": 17.42,
+      "rmse": 26.58,
+      "mape": 9.98,
+      "unit": "veh/5min"
+    },
+    "+30 min": {
+      "horizonMinutes": 30,
+      "mae": 20.14,
+      "rmse": 31.01,
+      "mape": 11.17,
+      "unit": "veh/5min"
+    },
+    "+60 min": {
+      "horizonMinutes": 60,
+      "mae": 25.29,
+      "rmse": 38.35,
+      "mape": 14.43,
+      "unit": "veh/5min"
+    }
+  },
+  "datasetContext": {
+    "sensorCount": 170,
+    "testSamples": 1775,
+    "trainMeanFlow": 230.22,
+    "trainStdFlow": 145.87
+  },
+  "trainingDetails": {
+    "epochs": 5,
+    "bestValLoss": 0.0225,
+    "durationSeconds": 170.73,
+    "checkpointPath": "data/processed/pems08\\models\\flow_spatial_graph_lstm_best.pt"
+  }
+}

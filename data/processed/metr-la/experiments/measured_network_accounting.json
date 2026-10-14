@@ -1,0 +1,177 @@
+{
+  "benchmarkName": "Controlled Network-Byte Transport Benchmark",
+  "description": "Reproducible local transport measurement of simulated FL client-server communication over localhost TCP sockets.",
+  "authoritativeMetric": "Serialized Application Payload",
+  "wording": "Controlled Network Transfer Bytes \u2014 Local Test",
+  "disclaimer": "Measured on local loopback transport (127.0.0.1). Physical cellular radio overhead, base station retransmissions, and multi-hop carrier routing are not modeled.",
+  "environment": {
+    "host": "127.0.0.1 (Localhost)",
+    "protocol": "HTTP/1.1 over TCP",
+    "accountingMethod": "OS Socket Stream & HTTP Wire Interception",
+    "hasPsutil": true,
+    "psutilLoopbackSummary": {
+      "bytesSentDelta": 459,
+      "bytesRecvDelta": 77495,
+      "packetsSentDelta": 7,
+      "packetsRecvDelta": 561
+    }
+  },
+  "payloadSpecification": {
+    "clientModelBytes": 110271,
+    "roundsCount": 13,
+    "clientsCount": 4
+  },
+  "policies": {
+    "4/4": {
+      "policyId": "FULL",
+      "policyName": "Full Participation",
+      "budgetRatio": "4/4",
+      "clientsPerRound": 4,
+      "roundsEvaluated": 13,
+      "transfersCount": 104,
+      "applicationPayloadBytes": 11468184,
+      "measuredNetworkBytes": 11502380,
+      "measuredReductionPercent": 0.0,
+      "requestHeadersBytes": 21248,
+      "responseHeadersBytes": 10504,
+      "ackPayloadBytes": 5736536,
+      "transportOverheadBytes": 34196,
+      "transportOverheadPercent": 0.298,
+      "elapsedSeconds": 0.9792
+    },
+    "3/4": {
+      "policyId": "SEVENTY_FIVE",
+      "policyName": "75% Participation",
+      "budgetRatio": "3/4",
+      "clientsPerRound": 3,
+      "roundsEvaluated": 13,
+      "transfersCount": 78,
+      "applicationPayloadBytes": 8601138,
+      "measuredNetworkBytes": 8626785,
+      "measuredReductionPercent": 25.0,
+      "requestHeadersBytes": 15936,
+      "responseHeadersBytes": 7878,
+      "ackPayloadBytes": 4302402,
+      "transportOverheadBytes": 25647,
+      "transportOverheadPercent": 0.298,
+      "elapsedSeconds": 0.8358
+    },
+    "2/4": {
+      "policyId": "FIFTY",
+      "policyName": "50% Participation",
+      "budgetRatio": "2/4",
+      "clientsPerRound": 2,
+      "roundsEvaluated": 13,
+      "transfersCount": 52,
+      "applicationPayloadBytes": 5734092,
+      "measuredNetworkBytes": 5751190,
+      "measuredReductionPercent": 50.0,
+      "requestHeadersBytes": 10624,
+      "responseHeadersBytes": 5252,
+      "ackPayloadBytes": 2868268,
+      "transportOverheadBytes": 17098,
+      "transportOverheadPercent": 0.298,
+      "elapsedSeconds": 0.6367
+    },
+    "1/4": {
+      "policyId": "TWENTY_FIVE",
+      "policyName": "25% Participation",
+      "budgetRatio": "1/4",
+      "clientsPerRound": 1,
+      "roundsEvaluated": 13,
+      "transfersCount": 26,
+      "applicationPayloadBytes": 2867046,
+      "measuredNetworkBytes": 2875595,
+      "measuredReductionPercent": 75.0,
+      "requestHeadersBytes": 5312,
+      "responseHeadersBytes": 2626,
+      "ackPayloadBytes": 1434134,
+      "transportOverheadBytes": 8549,
+      "transportOverheadPercent": 0.298,
+      "elapsedSeconds": 0.3475
+    }
+  },
+  "sampleTransfers": [
+    {
+      "round": 1,
+      "clientId": "region_0",
+      "direction": "UPLOAD",
+      "requestHeadersBytes": 241,
+      "requestPayloadBytes": 110271,
+      "responseHeadersBytes": 95,
+      "responsePayloadBytes": 47,
+      "totalWireBytes": 110654
+    },
+    {
+      "round": 1,
+      "clientId": "region_0",
+      "direction": "DOWNLOAD",
+      "requestHeadersBytes": 167,
+      "requestPayloadBytes": 0,
+      "responseHeadersBytes": 107,
+      "responsePayloadBytes": 110271,
+      "totalWireBytes": 110545
+    },
+    {
+      "round": 2,
+      "clientId": "region_0",
+      "direction": "UPLOAD",
+      "requestHeadersBytes": 241,
+      "requestPayloadBytes": 110271,
+      "responseHeadersBytes": 95,
+      "responsePayloadBytes": 47,
+      "totalWireBytes": 110654
+    },
+    {
+      "round": 2,
+      "clientId": "region_0",
+      "direction": "DOWNLOAD",
+      "requestHeadersBytes": 167,
+      "requestPayloadBytes": 0,
+      "responseHeadersBytes": 107,
+      "responsePayloadBytes": 110271,
+      "totalWireBytes": 110545
+    },
+    {
+      "round": 3,
+      "clientId": "region_0",
+      "direction": "UPLOAD",
+      "requestHeadersBytes": 241,
+      "requestPayloadBytes": 110271,
+      "responseHeadersBytes": 95,
+      "responsePayloadBytes": 47,
+      "totalWireBytes": 110654
+    },
+    {
+      "round": 3,
+      "clientId": "region_0",
+      "direction": "DOWNLOAD",
+      "requestHeadersBytes": 167,
+      "requestPayloadBytes": 0,
+      "responseHeadersBytes": 107,
+      "responsePayloadBytes": 110271,
+      "totalWireBytes": 110545
+    },
+    {
+      "round": 4,
+      "clientId": "region_0",
+      "direction": "UPLOAD",
+      "requestHeadersBytes": 241,
+      "requestPayloadBytes": 110271,
+      "responseHeadersBytes": 95,
+      "responsePayloadBytes": 47,
+      "totalWireBytes": 110654
+    },
+    {
+      "round": 4,
+      "clientId": "region_0",
+      "direction": "DOWNLOAD",
+      "requestHeadersBytes": 167,
+      "requestPayloadBytes": 0,
+      "responseHeadersBytes": 107,
+      "responsePayloadBytes": 110271,
+      "totalWireBytes": 110545
+    }
+  ],
+  "generatedAt": "2026-10-13T10:15:05Z"
+}

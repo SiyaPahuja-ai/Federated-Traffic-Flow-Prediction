@@ -1,0 +1,67 @@
+{
+  "datasetName": "PeMS08",
+  "domain": "Freeway Traffic Flow Volume",
+  "source": "Caltrans PeMS District 8 (San Bernardino)",
+  "benchmarkPaper": "Guo et al. (AAAI 2019) ASTGCN",
+  "samplingRate": "5 minutes",
+  "totalTimesteps": 17856,
+  "sensorCount": 170,
+  "primaryMetric": "flow_volume",
+  "primaryUnit": "veh/5min",
+  "channels": [
+    {
+      "channel": 0,
+      "name": "flow",
+      "unit": "veh/5min",
+      "description": "Vehicle volume aggregated per 5 min"
+    },
+    {
+      "channel": 1,
+      "name": "occupancy",
+      "unit": "ratio [0,1]",
+      "description": "Fraction of interval loop is occupied"
+    },
+    {
+      "channel": 2,
+      "name": "speed",
+      "unit": "mph",
+      "description": "Average vehicle speed"
+    }
+  ],
+  "splits": {
+    "train": {
+      "start": 0,
+      "end": 12499,
+      "count": 12499,
+      "ratio": 0.7
+    },
+    "val": {
+      "start": 12499,
+      "end": 14284,
+      "count": 1785,
+      "ratio": 0.1
+    },
+    "test": {
+      "start": 14284,
+      "end": 17856,
+      "count": 3572,
+      "ratio": 0.2
+    }
+  },
+  "trainScaler": {
+    "dataset": "PeMS08",
+    "targetVariable": "flow",
+    "unit": "veh/5min",
+    "mean": 230.2189,
+    "std": 145.8735,
+    "min": 0.0,
+    "max": 1147.0,
+    "fitSplit": "TRAIN_ONLY",
+    "trainTimesteps": 12499
+  },
+  "graph": {
+    "numNodes": 170,
+    "numEdges": 273,
+    "adjacencyFile": "adj_pems08.npy"
+  }
+}
